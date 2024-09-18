@@ -1,6 +1,7 @@
 ﻿# Calls apache-logs function
 . (Join-Path $PSScriptRoot "apache-logs.ps1")
 . (Join-Path $PSScriptRoot "s.ps1")
+. (Join-Path $PSScriptRoot "parsing.ps1")
 
 $pageVisited = Get-Content C:\xampp\apache\logs\access.log | `
 Select-String -Pattern '"GET\s+([^ ]+)' | ForEach-Object {$_.Matches.Groups[1].Value}
