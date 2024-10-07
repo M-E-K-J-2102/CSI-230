@@ -206,17 +206,11 @@ while($operation){
         $days = Read-Host
         if (-not $days -match '^[1-9][0-9]*$')
             {
-                $days = 0
+                Write-Host ("Enter an integer greater than 0" | Out-String)
                 continue
-                
             }
 
-        # Gater data and store it 
-        $userLogins = getFailedLogins $days
-        $atRiskUsers = $userLogins | Where-Object {$_.FailedLoginCount -gt 10}
-
-        # Print table
-        Write-Host ($atRiskLogins | Format-Table | Out-String)
+        endangeredUsers -timeBack $days
           
     # Done: Create another choice "List at Risk Users" that
     #              - Lists all the users with more than 10 failed logins in the last <User Given> days.  
