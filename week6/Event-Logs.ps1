@@ -101,6 +101,7 @@ function endangeredUsers($timeBack) {
     if ($exceededUsers.Count -eq 0)
     {
         Write-Host ("Good news, there are no endangered users!" | Out-String)
+        return @()
     } 
     else 
     {
@@ -109,8 +110,9 @@ function endangeredUsers($timeBack) {
         {
             Write-Host "$($user.Name): $($user.Count) attempts"
         }
+        return $exceededUsers
     }
 }
 
 # Example usage: Check for failed logins in the last 30 days
-Check-FailedLoginAttempts -timeBack 30
+# Check-FailedLoginAttempts -timeBack 30
