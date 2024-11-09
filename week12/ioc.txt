@@ -1,0 +1,5 @@
+etc/psswd
+/bin/sh
+/bin/bash
+\.\./
+cmd\.exe
