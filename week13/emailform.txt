@@ -1,0 +1,16 @@
+To: matthew.kanejimenez@mymail.champlain.edu
+Subject: Failed Logins
+Nov 17 lightdm
+Nov 17 champuser
+Nov 17 lightdm
+Nov 18 champuser
+Nov 18 lightdm
+Nov 18 champuser
+Nov 18 lightdm
+Nov 18 champuser
+Nov 17 18:02:25 user=champuser
+Nov 18 11:15:03 user=champuser
+Nov 18 11:15:04 user=champuser
+Nov 18 11:15:10 user=champuser
+Nov 18 11:15:14 user=champuser
+Nov 18 11:15:55 user=champuser
